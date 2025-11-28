@@ -24,25 +24,75 @@ sales_data = [
 
 def total_sales_by_product(data, product_key):
     """Calculates the total sales of a specific product in 30 days."""
+    total_a=0
+    total_b=0
+    total_c=0
+    total_list = {"product_a":total_a, "product_b":total_b, "product_c":total_c}
+    for key in list:
+        if key == "product_a":
+            total_a += value
+        elif key == "product_b":
+            total_b += value
+        else:
+            key == "product_c"
+            total_c += value
+    return total_list
+#print(total_list)
+#total_sales_by_product(sales_data, "product_a")
     pass
 
 
 def average_daily_sales(data, product_key):
+    total_sales = 0
+    for product_key in sales_data:
+        total_sales += value
+    avrg=total_sales/20
+
     """Calculates the average daily sales of a specific product."""
     pass
 
 
 def best_selling_day(data):
+    sales_by_day = []
+    
+    for day in data:
+        sls_day = 
+
+
     """Finds the day with the highest total sales."""
     pass
 
 
 def days_above_threshold(data, product_key, threshold):
+    day_count = 0
+    for product_key in data:
+        if value > threshold:
+            day_count += 1
     """Counts how many days the sales of a product exceeded a given threshold."""
     pass
 
 
 def top_product(data):
+    total_a=0
+    total_b=0
+    total_c=0
+    total_list = [total_a, total_b, total_c}
+    for key in list:
+        if key == "product_a":
+            total_a += value
+        elif key == "product_b":
+            total_b += value
+        else:
+            key == "product_c"
+            total_c += value
+        #return 
+    
+    def max_integer(total_list):
+    max_int = list[0]
+        for i in range(len(list)):
+            if list[i] > max_int:
+                max_int = list[i]
+        return max_int
     """Determines which product had the highest total sales in 30 days."""
     pass
 
