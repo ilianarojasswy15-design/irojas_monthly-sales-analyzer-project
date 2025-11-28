@@ -57,7 +57,7 @@ def best_selling_day(data):
     
     for day in data:
         sls_day = 
-
+#No encuentro cómo extraer los valores de cada key y sumarlos para hacer una lista de valores y aplicar un Max Integer.
 
     """Finds the day with the highest total sales."""
     pass
