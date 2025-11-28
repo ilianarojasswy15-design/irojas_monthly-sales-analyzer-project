@@ -22,80 +22,29 @@ sales_data = [
     {"day": 20, "product_a": 210, "product_b": 57, "product_c": 324}
 ]
 
+
 def total_sales_by_product(data, product_key):
     """Calculates the total sales of a specific product in 30 days."""
-    total_a=0
-    total_b=0
-    total_c=0
-    total_list = {"product_a":total_a, "product_b":total_b, "product_c":total_c}
-    for key in list:
-        if key == "product_a":
-            total_a += value
-        elif key == "product_b":
-            total_b += value
-        else:
-            key == "product_c"
-            total_c += value
-    return total_list
-#print(total_list)
-#total_sales_by_product(sales_data, "product_a")
-    pass
-
+    return sum(day[product_key] for day in data)
 
 def average_daily_sales(data, product_key):
-    total_sales = 0
-    for product_key in sales_data:
-        total_sales += value
-    avrg=total_sales/20
-
     """Calculates the average daily sales of a specific product."""
-    pass
-
+    return sum(day[product_key] for day in data) / len(data)
 
 def best_selling_day(data):
-    sales_by_day = []
-    
-    for day in data:
-        sls_day = 
-#No encuentro cómo extraer los valores de cada key y sumarlos para hacer una lista de valores y aplicar un Max Integer.
-
     """Finds the day with the highest total sales."""
-    pass
-
+    return max(data,key=lambda d: d["product_a"] + d["product_b"] + d["product_c"])["day"]
 
 def days_above_threshold(data, product_key, threshold):
-    day_count = 0
-    for product_key in data:
-        if value > threshold:
-            day_count += 1
     """Counts how many days the sales of a product exceeded a given threshold."""
-    pass
-
+    return sum(1 for day in data if day[product_key] > threshold)
 
 def top_product(data):
-    total_a=0
-    total_b=0
-    total_c=0
-    total_list = [total_a, total_b, total_c}
-    for key in list:
-        if key == "product_a":
-            total_a += value
-        elif key == "product_b":
-            total_b += value
-        else:
-            key == "product_c"
-            total_c += value
-        #return 
-    
-    def max_integer(total_list):
-    max_int = list[0]
-        for i in range(len(list)):
-            if list[i] > max_int:
-                max_int = list[i]
-        return max_int
     """Determines which product had the highest total sales in 30 days."""
-    pass
-
+    max_a = total_sales_by_product(data, "product_a")
+    max_b = total_sales_by_product(data, "product_b")
+    max_c = total_sales_by_product(data, "product_c")
+    return max(["product_a", max_a] , ["product_b", max_b] , ["product_c", max_c])
 
 
 # Function tests
